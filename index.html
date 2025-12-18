@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Digital - Beranda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header dengan navigasi -->
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">📚 Perpustakaan Digital</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Beranda</a></li>
+                    <li><a href="katalog.html">Katalog Buku</a></li>
+                    <li><a href="kategori.html">Kategori</a></li>
+                    <li><a href="favorit.html">Favorit</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Konten utama -->
+    <main>
+        <!-- Section hero/pembuka -->
+        <section class="hero">
+            <div class="container">
+                <h2>Selamat Datang di Perpustakaan Digital</h2>
+                <p>Akses ribuan buku gratis kapan saja, di mana saja</p>
+                <button class="btn-primary" onclick="scrollToBooks()">Jelajahi Buku</button>
+            </div>
+        </section>
+
+        <!-- Section statistik -->
+        <section class="stats">
+            <div class="container">
+                <div class="stat-item">
+                    <h3 id="bookCount">0</h3>
+                    <p>Total Buku</p>
+                </div>
+                <div class="stat-item">
+                    <h3 id="categoryCount">0</h3>
+                    <p>Kategori</p>
+                </div>
+                <div class="stat-item">
+                    <h3 id="readerCount">0</h3>
+                    <p>Pembaca Aktif</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section buku populer -->
+        <section class="popular-books" id="booksSection">
+            <div class="container">
+                <h2>Buku Populer</h2>
+                <div class="book-grid" id="popularBooksGrid">
+                    <!-- Buku akan dimuat melalui JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section fitur -->
+        <section class="features">
+            <div class="container">
+                <h2>Keunggulan Kami</h2>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h3>100% Gratis</h3>
+                        <p>Semua buku dapat diakses tanpa biaya apapun</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Akses Mudah</h3>
+                        <p>Baca dari perangkat apapun, kapan saja</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Pencarian Cepat</h3>
+                        <p>Temukan buku yang Anda cari dengan mudah</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Favorit</h3>
+                        <p>Simpan buku favorit untuk dibaca nanti</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Perpustakaan Digital. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

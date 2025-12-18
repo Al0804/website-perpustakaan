@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang - Perpustakaan Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header dengan navigasi -->
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">📚 Perpustakaan Digital</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="katalog.html">Katalog Buku</a></li>
+                    <li><a href="kategori.html">Kategori</a></li>
+                    <li><a href="favorit.html">Favorit</a></li>
+                    <li><a href="tentang.html" class="active">Tentang</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Konten utama -->
+    <main>
+        <!-- Section tentang -->
+        <section class="about-section">
+            <div class="container">
+                <article class="about-content">
+                    <h2>Tentang Perpustakaan Digital</h2>
+                    <p>Perpustakaan Digital adalah platform yang menyediakan akses gratis ke berbagai koleksi buku dari seluruh dunia. Kami berkomitmen untuk menyebarkan pengetahuan dan literasi kepada semua orang tanpa batasan.</p>
+                    
+                    <h3>Misi Kami</h3>
+                    <p>Memberikan akses mudah dan gratis ke buku-buku berkualitas untuk meningkatkan literasi dan pengetahuan masyarakat Indonesia.</p>
+                    
+                    <h3>Visi Kami</h3>
+                    <p>Menjadi platform perpustakaan digital terdepan yang membantu menciptakan masyarakat yang gemar membaca dan terus belajar.</p>
+                    
+                    <h3>Sumber Buku</h3>
+                    <p>Semua buku dalam perpustakaan kami bersumber dari Project Gutenberg, sebuah perpustakaan digital yang menyediakan lebih dari 70,000 buku gratis yang sudah bebas hak cipta.</p>
+                </article>
+
+                <!-- Form kontak -->
+                <article class="contact-form">
+                    <h3>Hubungi Kami</h3>
+                    <form id="contactForm" onsubmit="submitContact(event)">
+                        <div class="form-group">
+                            <label for="name">Nama:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Kirim Pesan</button>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Perpustakaan Digital. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

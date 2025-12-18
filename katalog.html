@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Buku - Perpustakaan Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header dengan navigasi -->
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">📚 Perpustakaan Digital</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="katalog.html" class="active">Katalog Buku</a></li>
+                    <li><a href="kategori.html">Kategori</a></li>
+                    <li><a href="favorit.html">Favorit</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Konten utama -->
+    <main>
+        <!-- Section pencarian -->
+        <section class="search-section">
+            <div class="container">
+                <h2>Katalog Buku</h2>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Cari judul buku atau penulis...">
+                    <button class="btn-primary" onclick="searchBooks()">Cari</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section daftar buku -->
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog-header">
+                    <p id="resultCount">Menampilkan semua buku</p>
+                    <select id="sortSelect" onchange="sortBooks()">
+                        <option value="title">Urutkan: Judul (A-Z)</option>
+                        <option value="author">Urutkan: Penulis</option>
+                        <option value="year">Urutkan: Tahun</option>
+                    </select>
+                </div>
+                <div class="book-grid" id="catalogGrid">
+                    <!-- Buku akan dimuat melalui JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Perpustakaan Digital. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

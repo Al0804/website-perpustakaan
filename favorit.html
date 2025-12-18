@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorit - Perpustakaan Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header dengan navigasi -->
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">📚 Perpustakaan Digital</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="katalog.html">Katalog Buku</a></li>
+                    <li><a href="kategori.html">Kategori</a></li>
+                    <li><a href="favorit.html" class="active">Favorit</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Konten utama -->
+    <main>
+        <!-- Section favorit -->
+        <section class="favorites-section">
+            <div class="container">
+                <h2>Buku Favorit Saya</h2>
+                <p class="subtitle">Koleksi buku yang telah Anda simpan</p>
+                
+                <!-- Pesan jika belum ada favorit -->
+                <div id="emptyFavorites" class="empty-state">
+                    <p>📚 Belum ada buku favorit</p>
+                    <p>Mulai tambahkan buku ke favorit dari halaman katalog</p>
+                    <a href="katalog.html" class="btn-primary">Jelajahi Katalog</a>
+                </div>
+
+                <!-- Grid buku favorit -->
+                <div class="book-grid" id="favoritesGrid">
+                    <!-- Buku favorit akan dimuat melalui JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Perpustakaan Digital. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
